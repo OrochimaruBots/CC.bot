@@ -20,14 +20,14 @@ const defaultMenu = {
 ├ Uptime: *%uptime (%muptime)*
 ├ Database: %rtotalreg dari %totalreg
 ├ Github:
-├ %github
+├ https://github.com/OrochimaruBotz
 └────
 %readmore`.trim(),
   header: '┌─〔 %category 〕',
   body: '├ %cmd %islimit %isPremium',
   footer: '└────\n',
   after: `
-*%npmname@^%version*
+*Top global ngesamtir@^%version*
 ${'```%npmdesc```'}
 `,
 }
