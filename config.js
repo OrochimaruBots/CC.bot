@@ -49,7 +49,7 @@ global.urlnya = "https://www.instagram.com/ashenford_"
 
 //============= callButtons =============//
 global.dtc = 'ᴄᴀʟʟ ᴏᴡɴᴇʀ'
-global.phn = '+62 812-7624-2128'
+global.phn = '+62 888-0494-7282'
 
 //============= Games ================//
 global.benar = '_*Benar✅*_'
@@ -64,7 +64,7 @@ global.author = data.owner;
 
 //=========== Requirements ==========//  
         global.colong1 = 'Ciss 📸'
-        global.colong2 = 'ʙy Pino'
+        global.colong2 = 'ʙy Top global ngesamtir'
 global.img = pickRandom(waifu)
 global.fla = pickRandom(flaaa)
 
@@ -97,7 +97,7 @@ global.rpg = {
       kucing: '🐈' ,
       anjing: '🐕',
       makananpet: '🍖',
-      gold: '👑',
+      gold: '🪙',
       emerald: '💚'
     }
     let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
