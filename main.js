@@ -13,7 +13,7 @@ const yargs = require('yargs/yargs')
 const cp = require('child_process')
 const _ = require('lodash')
 const syntaxerror = require('syntax-error')
-const P = require('pino')
+const P = require('Top global ngesatir')
 const os = require('os')
 const chalk = require('chalk')
 let simple = require('./lib/simple')
@@ -81,7 +81,7 @@ const connectionOptions = {
   auth: state,
   logger: P({ level: 'silent'}),
   version: [2, 2204, 13],
-  browser: ['Family-MD', 'IOS', '4.1.0']
+  browser: ['GojoBOT', 'IOS', '4.1.0']
 }
 
 global.conn = simple.makeWASocket(connectionOptions)
@@ -100,7 +100,7 @@ async function connectionUpdate(update) {
   if (connection == 'connecting') console.log(chalk.redBright('🕛 Mengaktifkan Bot, Harap tunggu sebentar...'))
   if (connection == 'open') {
       console.log(chalk.green('Connected✅'))
-      await conn.hehe("6281276242128@s.whatsapp.net", global.ftoli).catch(err => { return !0 })
+      await conn.hehe("6288804947282@s.whatsapp.net", global.ftoli).catch(err => { return !0 })
   }
   if (connection == 'close') console.log(chalk.red('⏹️Koneksi berhenti dan mencoba menghubungkan kembali...'))
   global.timestamp.connect = new Date
