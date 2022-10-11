@@ -22,8 +22,8 @@ module.exports = {
         const seli = Tnow - m.messageTimestamp
        if (seli > global.Intervalmsg) return console.log(new ReferenceError(`Pesan ${Intervalmsg} detik yang lalu diabaikan agar tidak nyepam`))
 
-        global.namabot = await this.user.name
-        global.wm = namabot + ' ву Top global ngesatir'
+        global.namabot = 'GojoBotzMD'
+        global.wm = 'GojoBotzMD' + 'By Humazn'
         //console.log(JSON.stringify(m, null, 4))
         try {
             m = simple.smsg(this, m) || m
@@ -260,8 +260,8 @@ module.exports = {
                     if (!('sDemote' in chat)) chat.sDemote = ''
                     if (!('desc' in chat)) chat.desc = true
                     if (!('descUpdate' in chat)) chat.descUpdate = true
-                    if (!('stiker' in chat)) chat.stiker = false
-                    if (!('delete' in chat)) chat.delete = false
+                    if (!('stiker' in chat)) chat.stiker = true
+                    if (!('delete' in chat)) chat.delete = true
                     if (!('antiLink' in chat)) chat.antiLink = true
                     if (!isNumber(chat.expired)) chat.expired = 0
                     if (!('antiBadword' in chat)) chat.antiBadword = true
@@ -269,9 +269,9 @@ module.exports = {
                     if (!('antitroli' in chat)) chat.antitroli = false
                     if (!('antivirtex' in chat)) chat.antivirtex = false
                     if (!('viewonce' in chat)) chat.viewonce = true
-                    if (!('nsfw' in chat)) chat.nsfw = false
-                    if (!('simi' in chat)) chat.simi = false
-                    if (!('clear' in chat)) chat.clear = false
+                    if (!('nsfw' in chat)) chat.nsfw = true
+                    if (!('simi' in chat)) chat.simi = true
+                    if (!('clear' in chat)) chat.clear = true
                     if (!isNumber(chat.cleartime)) chat.clearTime = 0 
                 } else global.db.data.chats[m.chat] = {
                     name: this.getName(m.chat),
@@ -310,7 +310,7 @@ module.exports = {
                     if (!'backup' in settings) settings.backup = false
                     if (!isNumber(settings.backupDB)) settings.backupDB = 0
                     if (!'groupOnly' in settings) settings.groupOnly = false
-                    if (!'jadibot' in settings) settings.jadibot = false
+                    if (!'jadibot' in settings) settings.jadibot = true
                     if (!isNumber(settings.status)) settings.status = 0
                     if (!'epe' in settings) settings.epe = true
                     if (!'game' in settings) settings.game = true
