@@ -73,7 +73,8 @@ loadDatabase()
 //   require('./lib/cluster').Cluster()
 // }
 const authFile = `${opts._[0] || 'session'}.data.json`
-const { state, saveState } = useSingleFileAuthState(authFile)
+const { state, saveState } = useSingleFileAuthState(global.authFile)
+
 
 const connectionOptions = {
   printQRInTerminal: true,
